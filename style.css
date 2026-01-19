@@ -1,41 +1,56 @@
-/* Base Styles */
-body {
-    background-color: #000;  /* full black */
-    color: #f1f1f1;          /* light text */
-    font-family: Arial, sans-serif;
+/* ==========================
+   Reset & Base Styles
+   ========================== */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;  /* Full black background */
+    color: #f1f1f1;          /* Light text for readability */
+    font-family: Arial, sans-serif;
 }
 
 /* Links */
 a {
     color: #0d6efd;
+    text-decoration: none;
 }
+
 a:hover {
     color: #0b5ed7;
 }
 
-/* Header */
+/* ==========================
+   Header Section
+   ========================== */
 .header-section {
-    background-color: #000;
+    background-color: #000; /* Black header */
     padding: 80px 0;
     position: relative;
+    text-align: left;
 }
 
-/* Profile image */
+/* Profile Image */
 .profile-img {
     width: 280px;
     height: auto;
     object-fit: contain;
     margin-bottom: 0;
+    display: block;
 }
 
-/* Buttons */
+/* ==========================
+   Buttons
+   ========================== */
 .btn-primary {
     background-color: #0d6efd !important;
+    border: none !important;
     color: #fff !important;
-    border: none;
 }
+
 .btn-primary:hover {
     background-color: #0b5ed7 !important;
 }
@@ -44,18 +59,51 @@ a:hover {
     border-color: #fff !important;
     color: #fff !important;
 }
+
 .btn-outline-dark:hover {
     background-color: #0d6efd !important;
+    color: #fff !important;
 }
 
-/* Sections: plain black, no boxes */
-section, div.section {
-    background-color: #000 !important; /* full black */
-    color: #f1f1f1 !important;
+/* ==========================
+   Sections (About, Skills, Contact)
+   ========================== */
+section {
+    background-color: #000; /* Plain black */
+    color: #f1f1f1;         /* Light text */
     padding: 60px 0;
 }
 
-/* Remove all Bootstrap card/container backgrounds */
+/* Headings & text */
+h1, h2, h3, h4, h5, h6, p, li, span, strong, small {
+    color: #f1f1f1 !important;
+}
+
+/* ==========================
+   Project Cards
+   ========================== */
+.project-card {
+    background-color: #111; /* Slightly lighter black */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Remove all default card/container backgrounds for sections */
 .container, .card, .card-body, .card-img-top {
     background: transparent !important;
     border: none !important;
@@ -63,14 +111,24 @@ section, div.section {
     color: #f1f1f1 !important;
 }
 
-/* Headings and text */
-h1,h2,h3,h4,h5,h6,p,li,span,strong {
-    color: #f1f1f1 !important;
+/* ==========================
+   Footer
+   ========================== */
+footer {
+    background-color: #000;
+    color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* Responsive */
+/* ==========================
+   Responsive
+   ========================== */
 @media (max-width: 768px) {
     .profile-img {
         width: 200px;
+    }
+    .project-card img {
+        height: 150px;
     }
 }
