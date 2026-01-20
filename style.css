@@ -15,12 +15,12 @@ body {
 
 /* Links */
 a {
-    color: #0d6efd;
+    color: #86C232;
     text-decoration: none;
 }
 
 a:hover {
-    color: #0b5ed7;
+    color: #86C232;
 }
 
 /* ==========================
@@ -46,13 +46,13 @@ a:hover {
    Buttons
    ========================== */
 .btn-primary {
-    background-color: #0d6efd !important;
+    background-color: #86C232 !important;
     border: none !important;
     color: #fff !important;
 }
 
 .btn-primary:hover {
-    background-color: #0b5ed7 !important;
+    background-color: #86C232 !important;
 }
 
 .btn-outline-dark {
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .btn-outline-dark:hover {
-    background-color: #0d6efd !important;
+    background-color: #86C232 !important;
     color: #fff !important;
 }
 
@@ -133,13 +133,13 @@ footer {
     }
 }
 /* ==========================
-   Pink Designer Background Behind Profile Image
+   Designer Background Behind Profile Image
    ========================== */
 
 .profile-bg {
     width: 420px;
     height: 420px;
-    background: #86C232;          /* Pink */
+    background: #86C232;          
     border-radius: 50% 50% 45% 45%;
     display: flex;
     align-items: flex-end;        /* Image touches bottom */
@@ -167,4 +167,51 @@ footer {
     .profile-img {
         width: 220px;
     }
+}
+/* ==========================
+   Hero Text Styling
+   ========================== */
+
+.hero-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;           /* Extra bold */
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.hero-name.hero-name-highlight {
+    color: #86C232 !important;
+}
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #d1d1d1;             /* Slightly gray for contrast */
+    margin-top: 10px;
+}
+
+/* Resume Download Button - Force Visible */
+.btn-resume {
+    background-color: #86C232 !important;
+    color: #000 !important;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 30px;
+    border: 2px solid #86C232 !important;
+    display: inline-block;
+}
+
+.btn-resume:hover {
+    background-color: #6fae2b !important;
+    color: #000 !important;
+    box-shadow: 0 6px 15px rgba(134, 194, 50, 0.5);
+}
+/* Navbar link hover color */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #86C232 !important;
 }
