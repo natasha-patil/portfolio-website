@@ -489,18 +489,19 @@ footer {
     font-size: 0.85rem;
     margin: 2px 0;
 }
-/* Contact Cards */
+/* Contact Cards - Dark Theme */
 .contact-card {
-    background-color: #111;
-    padding: 30px 25px;
-    border-radius: 14px;
-    border: 1px solid #1f1f1f;
+    background-color: #141414;
+    padding: 32px 28px;
+    border-radius: 16px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
     transition: all 0.3s ease;
 }
 
 .contact-card:hover {
-    transform: translateY(-5px);
-    border-color: #86C232;
+    transform: translateY(-4px);
+    border-color: #333;
 }
 
 /* Contact Items */
@@ -508,17 +509,17 @@ footer {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .contact-item i {
-    font-size: 1.5rem;
-    color: #86C232;
+    font-size: 1.4rem;
+    color: #86C232; /* green icons */
     min-width: 35px;
 }
 
 .contact-item small {
-    color: #aaa;
+    color: #9ca3af;
     display: block;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -530,34 +531,42 @@ footer {
     font-weight: 500;
 }
 
-/* Contact Form */
+/* Contact Form Inputs */
 .contact-card form .form-control {
-    background-color: #1c1c1c;
+    background-color: #1f1f1f;
     color: #f1f1f1;
-    border: 1px solid #2a2a2a;
+    border: 1px solid #333;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 12px 15px;
+    margin-bottom: 14px;
     transition: all 0.2s ease;
 }
 
-.contact-card form .form-control:focus {
-    background-color: #222;
-    border-color: #86C232;
-    color: #fff;
-    outline: none;
+.contact-card form .form-control::placeholder {
+    color: #9ca3af;
 }
 
+/* GREEN glow on focus */
+.contact-card form .form-control:focus {
+    background-color: #1f1f1f;
+    border-color: #86C232;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(134, 194, 50, 0.25);
+}
+
+/* Send Message Button - GREEN */
 .btn-send {
-    background-color: #86C232;
+    background: linear-gradient(135deg, #86C232, #6fae28);
     color: #000;
     border: none;
-    padding: 10px 20px;
-    border-radius: 30px;
+    padding: 12px 26px;
+    border-radius: 12px;
     font-weight: 600;
+    width: 100%;
     transition: all 0.3s ease;
 }
 
 .btn-send:hover {
-    background-color: #fff;
-    color: #000;
+    background: #9eea3a;
+    transform: translateY(-2px);
 }
