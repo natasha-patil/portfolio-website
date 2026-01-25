@@ -330,7 +330,16 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
-
+.achievement-content p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+.achievement-content h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -490,6 +499,15 @@ footer {
     margin: 2px 0;
 }
 /* Contact Cards - Dark Theme */
+.desc {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #9ca3af;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
 .contact-card {
     background-color: #141414;
     padding: 32px 28px;
@@ -645,3 +663,38 @@ footer {
 .footer-bottom span {
   color: #86C232;
 }
+/* Contact heading */
+.section h2 {
+  text-align: center;
+  font-size: 48px;        /* big */
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+.section h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #86C232;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  .section h2 {
+    font-size: 36px;
+  }
+}
+.about-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;        /* 16px */
+  line-height: 1.7;
+  color: #d1d5db;
+}
+.about-text strong {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
