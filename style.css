@@ -698,3 +698,121 @@ footer {
   font-size: 1.05rem;
 }
 
+/* ==========================
+   MOBILE OPTIMIZATION FIX
+   ========================== */
+@media (max-width: 576px) {
+
+  /* Global spacing */
+  section {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* HERO SECTION */
+  .header-section {
+    padding: 60px 0 40px;
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+
+  .hero-title {
+    font-size: 1rem;
+  }
+
+  .btn-resume {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  /* PROFILE IMAGE */
+  .profile-bg {
+    width: 240px;
+    height: 260px;
+    margin-top: 25px;
+  }
+
+  .profile-img {
+    width: 200px;
+  }
+
+  /* ABOUT TEXT */
+  .about-text {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  /* EDUCATION ROADMAP */
+  .roadmap {
+    margin-left: 0;
+    padding-left: 15px;
+  }
+
+  .roadmap-year {
+    position: static;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+
+  .roadmap-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* SKILLS */
+  .skill-card {
+    padding: 18px;
+  }
+
+  .skill-header h5 {
+    font-size: 1rem;
+  }
+
+  .skill-tags span {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+
+  /* PROJECTS */
+  .project-card img {
+    height: 140px;
+  }
+
+  /* ACHIEVEMENTS */
+  .achievement-content h5 {
+    font-size: 1rem;
+  }
+
+  .achievement-content p {
+    font-size: 0.9rem;
+  }
+
+  /* CONTACT */
+  .desc {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .contact-card {
+    padding: 22px;
+  }
+
+  /* FOOTER */
+  .footer-content {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .footer-right a {
+    margin: 0 6px;
+  }
+}
